@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getPetDetails } from '../../api/petfinder';
 import Hero from '../../components/hero';
-
-// Import useParams
-// Import Navigate
+import { Navigate, useParams } from "react-router-dom";
 
 const PetDetailsPage = () => {
   const [data, setData] = useState();
